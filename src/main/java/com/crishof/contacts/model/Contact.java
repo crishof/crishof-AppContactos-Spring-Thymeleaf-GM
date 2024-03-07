@@ -1,4 +1,4 @@
-package com.crishof.contactos.model;
+package com.crishof.contacts.model;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -14,13 +14,13 @@ import lombok.ToString;
 @NoArgsConstructor
 @AllArgsConstructor
 @ToString
-public class Contacto {
+public class Contact {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    Integer idContacto;
-    String nombre;
-    String celular;
+    Integer id;
+    String name;
+    String phone;
     String email;
 
 }

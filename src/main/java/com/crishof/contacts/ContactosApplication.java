@@ -1,4 +1,4 @@
-package com.crishof.contactos;
+package com.crishof.contacts;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

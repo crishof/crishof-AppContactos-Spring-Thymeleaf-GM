@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en"
+      xmlns:th="http://www.thymeleaf.org">
+<head th:replace="~{fragments/header::header-section(title='Agregar')}">
+</head>
+<body>
+
+<div th:replace="~{fragments/nav :: navbar}"></div>
+
+<div class="container">
+    <div class="container text-center" style="margin: 30px">
+        <h3>Agregar Contacto</h3>
+    </div>
+</div>
+
+<div class="container">
+
+    <form action="/add" method="post" modelAttribute="contactForm">
+        <div class="mb-3">
+            <label class="form-label" for="name">Name</label>
+            <input class="form-control" id="name"
+                   name="name" required="required" type="text">
+        </div>
+        <div class="mb-3">
+            <label class="form-label" for="phone">Phone</label>
+            <input class="form-control" id="phone"
+                   name="phone" type="text">
+        </div>
+        <div class="mb-3">
+            <label class="form-label" for="email">Email</label>
+            <input class="form-control" id="email"
+                   name="email" required="required" type="email">
+        </div>
+        <div class="text-center">
+
+            <button class="btn btn-warning btn-small me-3" type="submit">Submit</button>
+            <a class="btn btn-danger btn-small" href="/">Back</a>
+        </div>
+    </form>
+
+</div>
+
+
+<div th:replace="~{fragments/footer::footer-section}"></div>
+
+</body>
+</html>
